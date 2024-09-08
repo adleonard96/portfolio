@@ -1,0 +1,4 @@
+appsettings*
+*.csproj
+bin
+*.sln
