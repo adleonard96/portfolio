@@ -1,7 +1,10 @@
 @page "/whatImWorkingOn"
 
 @code {
-    
+    protected override async Task OnInitializedAsync()
+    {
+        var stats = await Github.GithubStatRetriever.GetStats();
+    }
 
     
-}
+}    using Github;
