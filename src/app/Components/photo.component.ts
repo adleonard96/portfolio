@@ -6,7 +6,8 @@ import {NgOptimizedImage} from '@angular/common';
   imports: [
     NgOptimizedImage
   ],
-  template: `<img alt="{{altText}}" ngSrc="{{path}}" height="100" width="100" >`
+  template: `<img class="photo" alt="{{altText}}" ngSrc="{{path}}" height="100" width="100">`,
+  styleUrl: "./photo.component.css"
 })
 
 export class PhotoComponent {
