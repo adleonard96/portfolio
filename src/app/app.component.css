@@ -1,0 +1,16 @@
+.name {
+  color: white;
+}
+.contact {
+  color: white;
+}
+
+.contact:visited {
+  color: white;
+}
+.contact:hover {
+  color: white;
+}
+.contact:active {
+  color:white;
+}
