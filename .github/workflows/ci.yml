@@ -23,7 +23,7 @@ jobs:
       - name: Run linters
         uses: super-linter/super-linter@v7.1.0          
         env:
-          DEFAULT_BRANCH: main
+          #DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
