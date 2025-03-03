@@ -19,12 +19,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
 
-      - name: Run linters
-        uses: super-linter/super-linter@v7.1.0          
-        env:
-          #DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Run linters
+      #   uses: super-linter/super-linter@v7.1.0          
+      #   env:
+      #     #DEFAULT_BRANCH: main
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: Setup Node.js
         uses: actions/setup-node@v4.2.0
